@@ -1,0 +1,39 @@
+.footer
+{
+    background-color: #FEF7ED;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.img-footer
+{
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-copyright
+{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.footer-form
+{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.form-group
+{
+    margin-bottom: 7px;
+}
+
+.btn-form-group
+{
+    margin-top: 25px;
+}

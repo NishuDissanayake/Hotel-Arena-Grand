@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./index.css" />
     </head>
     <body>
+        <%@ include file="./navbar.jsp"%>
         <div class="header-image">
             <h1 class="header-text">ARENA GRAND</h1>
         </div>
@@ -93,5 +94,6 @@ Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation
                 </div>
             </div>
         </div>
+        <%@ include file="./footer.jsp"%>
     </body>
 </html>
