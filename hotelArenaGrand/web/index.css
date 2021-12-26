@@ -1,10 +1,92 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 26, 2021, 7:32:27 PM
-    Author     : HP
-*/
+body
+{
+    font-family: poppins;
+}
 
+.header-image
+{
+    background-image: url('./Images/Home Header.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+.header-text
+{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.about
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h3
+{
+    margin-bottom: 20px;
+}
+
+.main-paragraph
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.card
+{
+    margin-left: 50px;
+}
+
+.card-header-text
+{
+    font-weight: bold;
+}
+
+.first-card
+{
+    margin-top: 50px;
+}
+
+.banner-image
+{
+    background-image: url('./Images/Home Header.jpg');
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.offers
+{
+    margin-bottom: 80px;
+}
+
+.btn
+{
+    background-color: #FFC164;
+    border-color: #FFC164;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.button-book
+{
+    width: 100%;
+    margin: auto !important;
+    justify-content: center !important;
+    align-items: center;
+    display: flex;
+}
