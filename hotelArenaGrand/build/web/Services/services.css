@@ -1,0 +1,65 @@
+body
+{
+    font-family: poppins;
+}
+
+.header-image
+{
+    background-image: url('./../Images/Home Header.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+.header-text
+{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.card-list
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.card-title
+{
+    margin-bottom: 20px;
+}
+
+.content
+{
+    padding-right: 100px;
+}
+
+.img1
+{
+    background-image: url('./../Images/Home Header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+
+.img2
+{
+    background-image: url('./../Images/Home Header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+}
+
+.content2
+{
+    padding-left: 100px;
+
+}
+
+.main-row
+{
+    margin-bottom: 60px;
+}
