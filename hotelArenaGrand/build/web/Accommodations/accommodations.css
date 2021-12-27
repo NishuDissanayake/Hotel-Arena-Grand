@@ -1,10 +1,21 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 26, 2021, 9:36:05 PM
-    Author     : HP
-*/
+body
+{
+    font-family: poppins;
+}
 
+.header-image
+{
+    background-image: url('./Images/Home Header.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+.header-text
+{
+    font-size: 65px;
+    font-weight: bold;
+}
