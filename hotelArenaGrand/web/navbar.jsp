@@ -25,19 +25,19 @@
             <div class="navbar-itemlist justify-content-end">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="./Services/services.jsp">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accommodations</a>
+                        <a class="nav-link" href="./Accommodations/accommodations.jsp">Accommodations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="./Gallery/gallery.jsp">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#footer-div">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign In</a>
+                        <a class="nav-link" href="./SignUp/signup.jsp">Sign In</a>
                     </li>
                 </ul>
             </div>

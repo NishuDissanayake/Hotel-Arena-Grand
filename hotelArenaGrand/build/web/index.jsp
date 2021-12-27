@@ -94,6 +94,6 @@ Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation
                 </div>
             </div>
         </div>
-        <%@ include file="./footer.jsp"%>
+        <div id="footer-div"><%@ include file="./footer.jsp"%></div>
     </body>
 </html>

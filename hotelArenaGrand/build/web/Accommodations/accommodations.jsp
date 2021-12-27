@@ -17,30 +17,33 @@
         <link rel="stylesheet" href="./accommodations.css" />
     </head>
     <body>
-        <%@ include file="./navbar.jsp"%>
         <div class="header-image">
             <h1 class="header-text">ACCOMMODATIONS</h1>
         </div>
         <div class="container card-set">
-            <div class="row">
-                <div class="col-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+            <div class="row card-row">
+                <div class="col-6 leftcol">
+                    <div class="card" >
+                        <img src="./../Images/Home Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
+                                DPrice: 12,000 LKR<br />
+                                Occupancy: 2 Adults, 1 Child<br /><br />
+                                Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+                <div class="col-6 rightcol">
+                    <div class="card" >
+                        <img src="./../Images/Home Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
+                                DPrice: 12,000 LKR<br />
+                                Occupancy: 2 Adults, 1 Child<br /><br />
+                                Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
@@ -48,24 +51,28 @@
                 
             </div>
             <div class="row">
-                <div class="col-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+                <div class="col-6 leftcol">
+                    <div class="card" >
+                        <img src="./../Images/Home Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
+                                DPrice: 12,000 LKR<br />
+                                Occupancy: 2 Adults, 1 Child<br /><br />
+                                Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+                <div class="col-6 rightcol">
+                    <div class="card">
+                        <img src="./../Images/Home Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
+                                DPrice: 12,000 LKR<br />
+                                Occupancy: 2 Adults, 1 Child<br /><br />
+                                Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
@@ -76,6 +83,5 @@
         </div>
         
         
-         <%@ include file="./footer.jsp"%>
     </body>
 </html>
