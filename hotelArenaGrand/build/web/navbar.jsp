@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#footer-div">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./SignUp/signup.jsp">Sign In</a>
+                        <a class="nav-link" href="./Reservations/reservations.jsp">Reservations</a>
                     </li>
                 </ul>
             </div>

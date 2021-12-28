@@ -1,7 +1,7 @@
 <%-- 
-    Document   : reservations
-    Created on : Dec 26, 2021, 7:19:08 PM
-    Author     : HP
+    Document   : ReservationsPay
+    Created on : Dec 28, 2021, 6:07:49 PM
+    Author     : Mahima
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -22,33 +22,10 @@
             <h1 class="header-text">Reservations</h1>
         </div>
         
-        <div class="container reserve ">
-            <div class="row">
-                <div class="col-6 form-header">
-                    <span>Book Now</span>
-                </div>
-                <div class="col-3 dropdown-text justify-content-end">
-                    <span>Room Type</span>
-                </div>
-                <div class="col-3 justify-content-end">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Select
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-        
-        <div class="container form-container ">
+        <div class="container Pay-form-container">
             <div class="reserve2">
                 <div class="form">
+                    <br/><br/>
                     <div class="input_field">
                         <label>Number of Rooms</label>
                         <input type="text" class="Num_input">
@@ -58,31 +35,23 @@
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Duration</label>
-                        <input type="text" class="input">
-                    </div>
-                    <div class="input_field">
-                        <label>Check In</label>
+                        <label>Date</label>
                         <input id="date" type="date" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Check Out</label>
-                        <input id="date" type="date" class="input">
-                    </div>
-                    <div class="input_field">
-                        <label>Phone Number</label>
+                        <label>Number of Guests</label>
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Email Address</label>
+                        <label>Rooms</label>
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Confirm Email Address</label>
+                        <label>Unit Price</label>
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Estimated Arrival Time</label>
+                        <label>Total Price</label>
                         <input type="text" class="input">
                     </div>
                     <div class="row">
@@ -100,7 +69,7 @@
                         </div>
                     </div>
                     <div class="input_field">
-                        <input type="submit" value="Check Availability" class="btn" onclick="window.location.href='./ReservationsAvailable.jsp';">
+                        <input type="submit" value="Pay Now" class="btn" onclick="window.location.href='./ReservationsAvailable.jsp';">
                     </div>
                     
                 </div>
