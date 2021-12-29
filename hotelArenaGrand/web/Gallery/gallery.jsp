@@ -1,4 +1,4 @@
-<%-- 
+ <%-- 
     Document   : gallery
     Created on : Dec 27, 2021, 2:10:13 PM
     Author     : HP
@@ -23,6 +23,7 @@
            <button type="button" class="btn btn-outline-primary">Exterior</button>
            <button type="button" class="btn btn-outline-primary">Interior</button>
            <button type="button" class="btn btn-outline-primary">Beach & Pool</button>
+           <img src="../../../../../../AppData/Local/Temp/download.jpg" alt=""/>
            <button type="button" class="btn btn-outline-primary">Dinning</button>
            <button type="button" class="btn btn-outline-primary">Wedding</button>
            
@@ -34,7 +35,9 @@
                  <div class="col-8">Exterior exterior exterior</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 img1"></div>
+                <div class="col-2 img1">
+                    <img src="./../Images/EXTERIOR (1).jpeg>
+                </div>
                 <div class="col-4 img2"></div>
                 <div class="col-2 img1"></div>
                 <div class="col-4 img2"></div>
