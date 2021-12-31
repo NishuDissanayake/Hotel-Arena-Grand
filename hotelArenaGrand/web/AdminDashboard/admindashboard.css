@@ -1,0 +1,95 @@
+body
+{
+    font-family: poppins;
+}
+
+.admin-table
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2
+{
+    color: #FF9900;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.table-1
+{
+    border: 2px solid #FF9900;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+table
+{
+    padding-top: 10px
+}
+
+th
+{
+    color: #FF9900;
+}
+
+.delete-booking
+{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    max-height: 30px;
+    border: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.table-2
+{
+    border: 2px solid #FF9900;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.from-txt
+{
+    color: #FF9900;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.row
+{
+    margin-bottom: 15px;
+}
+
+input 
+{
+    max-width: 300px;
+}
+
+.update-booking-btn
+{
+    color: white;
+    background-color: #FF9900;
+    font-weight: bold;
+    border: none;
+    min-width: 300px;
+}
+
+.row-1
+{
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+}
+
+form
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.update-booking
+{
+    margin-bottom: 80px;
+}

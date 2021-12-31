@@ -1,0 +1,101 @@
+body
+{
+    font-family: poppins;
+}
+
+.header-image
+{
+    background-image: url('./../Images/Home Header.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+.header-text
+{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.profile-pic
+{
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: -150px;
+    border-radius: 180px;
+}
+
+.table-row
+{
+    margin-bottom: 30px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.txt-col-1
+{
+    font-weight: bold;
+}
+
+.form-1
+{
+    margin-bottom: 80px;
+    display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 500px;
+}
+
+h2
+{
+    color: #FF9900;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.table-1
+{
+    border: 2px solid #FF9900;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+table
+{
+    padding-top: 10px
+}
+
+th
+{
+    color: #FF9900;
+}
+
+.delete-booking
+{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    max-height: 30px;
+    border: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.user-table
+{
+    margin-bottom: 80px;
+}

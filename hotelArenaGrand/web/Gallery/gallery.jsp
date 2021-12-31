@@ -35,9 +35,7 @@
                  <div class="col-8">Exterior exterior exterior</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 img1">
-                    <img src="./../Images/EXTERIOR (1).jpeg>
-                </div>
+                <div class="col-2 img1"></div>
                 <div class="col-4 img2"></div>
                 <div class="col-2 img1"></div>
                 <div class="col-4 img2"></div>
