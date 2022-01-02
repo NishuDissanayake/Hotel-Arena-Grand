@@ -5,7 +5,7 @@ body
 
 .header-image
 {
-    background-image: url('./../Images/header 2.jpg');
+    background-image: url('./../Images/Gallery Header5.jpg');
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@ body
 
 .img1
 {
-    background-image: url('./../Images/Gallery Header.jpg');
+    background-image: url('./../Images/Gallery Header5.jpg');
     height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@ body
 
 .img2
 {
-    background-image: url('./../Images/Gallery header1.jpeg');
+    background-image: url('./../Images/Gallery header5.jpeg');
     height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
