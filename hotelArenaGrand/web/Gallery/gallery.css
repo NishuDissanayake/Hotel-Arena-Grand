@@ -81,7 +81,21 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
+   
+    top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
  }
+ 
+ .ex-img1:hover
+ {
+    box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(-10px);
+    
+ }
+ 
  
   .ex-img3
  {
@@ -90,7 +104,18 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
+    
+    top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
  }
+  .ex-img3:hover
+  {
+      box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(-10px); 
+  }
  
   .ex-img5
  {
@@ -99,6 +124,17 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
+    
+     top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
+ }
+ .ex-img5:hover
+ {
+     box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(10px); 
  }
  
   .ex-img7
@@ -109,6 +145,17 @@ body
     background-size: cover;
     margin-right: 10px;
     max-width: 360px;
+    
+    top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
+ }
+ .ex-img7:hover
+ {
+      box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(10px); 
  }
  
  .ex-img2
@@ -120,6 +167,16 @@ body
     margin-right: 10px;
     max-width: 400px;
     
+    top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
+}
+.ex-img2:hover
+{
+     box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(-10px); 
 }
  
  .ex-img4
@@ -131,7 +188,18 @@ body
     margin-right: 10px;
     max-width: 400px;
     
+     top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
 }
+.ex-img4:hover
+{
+     box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(-10px); 
+}
+
 
  .ex-img6
 {
@@ -142,6 +210,17 @@ body
     margin-right: 10px;
     max-width: 400px;
     
+      top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
+    
+}
+.ex-img6:hover
+{
+     box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(10px); 
 }
 
  .ex-img8
@@ -153,6 +232,16 @@ body
     margin-right: 10px;
     max-width: 400px;
     
+      top: 0%;
+    left: 0;
+    transform: translate(0px);
+    transition: 1.1s all;
+    cursor: pointer;
+}
+.ex-img8:hover
+{
+     box-shadow: 6px 6px 40px 10px #757575;
+    transform: translateY(10px); 
 }
 
 
