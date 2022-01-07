@@ -17,15 +17,15 @@
     </head>
     <body>
         <div class="cotainer signup-form">
-            <form>
+            <form method="POST" action="../login">
                 <h2>Sign up</h2>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="Email Address">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="pwd"  placeholder="Password">
                 </div>
-                <div class="button-signup"><a href="./../UserProfile/userprofile.jsp" class="btn btn-primary">Submit</a></div>
+                <div class="button-signup"><button class="btn btn-primary" type="submit">Submit</button></div>
                 <p><span class="text-1">Don't have an account? </span><span class="text-2"><a href="./../SignUp/signup.jsp">Sign Up</a></span></p>
             </form>
         </div>

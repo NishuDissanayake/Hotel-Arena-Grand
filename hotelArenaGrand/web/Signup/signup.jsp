@@ -18,21 +18,25 @@
 
     <body>
         <div class="cotainer signup-form">
-            <form>
+            <form method="POST" action="../register">
                 <h2>Sign up</h2>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="fname" placeholder="Full Name">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email"placeholder="Email Address">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="phone" placeholder="Phone Number">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="pass" placeholder="Password">
                 </div>
-                <div class="button-signup"><a href="./../AdminDashboard/admindashboard.jsp" class="btn btn-primary">Submit</a></div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="confpass" placeholder="Confirm Password">
+                </div>
+                
+                <div class="button-signup"><button class="btn btn-primary" type="submit">Submit</button></div>
                 <p><span class="text-1">Already have an account? </span><span class="text-2"><a href="./../Login/login.jsp">Login</a></span></p>
             </form>
         </div>

@@ -1,0 +1,70 @@
+body
+{
+    font-family: poppins;
+}
+
+input 
+{
+    margin-bottom: 30px;
+    min-width: 300px;
+}
+
+.signup-form
+{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    text-align: center;
+    
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 3px solid #FFC164;
+    padding: 50px;
+    border-radius: 5px;
+    
+}
+
+h2
+{
+    color: #FFC164;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btn
+{
+    color: white;
+    background-color: #FFC164;
+    border: none;
+    min-width: 300px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p
+{
+    text-align: center;
+}
+
+.text-1
+{
+    color: #FFC164;
+    font-size: 14px;
+}
+
+.text-2
+{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
