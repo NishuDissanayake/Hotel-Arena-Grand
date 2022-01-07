@@ -36,7 +36,7 @@ body
 
 .form-header
 {
-   color: #3AAAB1;
+   color: #FFC164;
    font-size: 60px;
    font-weight: bold;
 }
@@ -45,12 +45,12 @@ body
     width: 100%;
 }
 
-.form-container
+.Pay-form-container
 {
     padding-right: 150px;
     padding-left: 150px;
     border-radius: 20px;
-    border: 2px solid #3AAAB1;
+    border: 2px solid #FFC164;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -79,20 +79,29 @@ label
     font-size: 14px;
 }
 
-.form .input_field .input{
+.form .payment_field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.form .input_field .pay_input{
     width: 100%;
     outline: none;
-    border: 1px solid #3AAAB1;
+    border: 1px solid #FFC164;
+    box-sizing: border-box;
+    width: 300px;  
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
-.form .input_field .Num_input{
+.form .input_field .payment_input{
     width: 100%;
     outline: none;
-    border: 1px solid #3AAAB1;
+    border: 1px solid #FFC164;
     box-sizing: border-box;
     width: 100px;  
     font-size: 15px;
@@ -102,7 +111,7 @@ label
 }
 
 .form .input_field .input:focus{
-    border: 2px solid #3AAAB1;
+    border: 2px solid #FFC164;
 }
 
 .form .input_field .btn{
@@ -111,7 +120,7 @@ label
     padding: 8px 10px;
     font-size: 15px;
     border: 0;
-    background: #3AAAB1;
+    background: #FFC164;
     margin-top: 40px;
     color:#fff;
     cursor: pointer;
