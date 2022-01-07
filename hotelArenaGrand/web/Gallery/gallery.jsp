@@ -34,17 +34,17 @@
                  <div class="col-8 img-strip"></div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 ex-img1"></div>
-                <div class="col-4 ex-img2"></div>
-                <div class="col-2 ex-img3"></div>
-                <div class="col-4 ex-img4"></div>
+                <div class="col-2 ex-img1 img-hover"></div>
+                <div class="col-4 ex-img2 img-hover"></div>
+                <div class="col-2 ex-img3 img-hover"></div>
+                <div class="col-4 ex-img4 img-hover"></div>
                 
             </div>
               <div class="row img-set2">
-                <div class="col-4 ex-img5"></div>
-                <div class="col-2 ex-img6"></div>
-                <div class="col-4 ex-img7"></div>
-                <div class="col-2 ex-img8"></div>
+                <div class="col-4 ex-img5 img-hover"></div>
+                <div class="col-2 ex-img6 img-hover"></div>
+                <div class="col-4 ex-img7 img-hover"></div>
+                <div class="col-2 ex-img8 img-hover"></div>
                 
             </div>
         </div>
@@ -56,17 +56,17 @@
                  <div class="col-4">Interior</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 in-img1"></div>
-                <div class="col-4 in-img2"></div>
-                <div class="col-2 in-img3"></div>
-                <div class="col-4 in-img4"></div>
+                <div class="col-2 in-img1 img-hover"></div>
+                <div class="col-4 in-img2 img-hover"></div>
+                <div class="col-2 in-img3 img-hover"></div>
+                <div class="col-4 in-img4 img-hover"></div>
                 
             </div>
               <div class="row img-set2">
-                <div class="col-4 in-img5"></div>
-                <div class="col-2 in-img6"></div>
-                <div class="col-4 in-img7"></div>
-                <div class="col-2 in-img8"></div>
+                <div class="col-4 in-img5 img-hover"></div>
+                <div class="col-2 in-img6 img-hover"></div>
+                <div class="col-4 in-img7 img-hover"></div>
+                <div class="col-2 in-img8 img-hover"></div>
                 
             </div>
         </div>
@@ -77,17 +77,17 @@
                  <div class="col-8">Beach & pool</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 bp-img1"></div>
-                <div class="col-4 bp-img2"></div>
-                <div class="col-2 bp-img3"></div>
-                <div class="col-4 bp-img4"></div>
+                <div class="col-2 bp-img1 img-hover"></div>
+                <div class="col-4 bp-img2 img-hover"></div>
+                <div class="col-2 bp-img3 img-hover"></div>
+                <div class="col-4 bp-img4 img-hover"></div>
                 
             </div>
               <div class="row img-set2">
-                <div class="col-4 bp-img5"></div>
-                <div class="col-2 bp-img6"></div>
-                <div class="col-4 bp-img7"></div>
-                <div class="col-2 bp-img8"></div>
+                <div class="col-4 bp-img5 img-hover"></div>
+                <div class="col-2 bp-img6 img-hover"></div>
+                <div class="col-4 bp-img7 img-hover"></div>
+                <div class="col-2 bp-img8 img-hover"></div>
                 
             </div>
         </div>
@@ -99,17 +99,17 @@
                  <div class="col-4">Dinning</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 di-img1"></div>
-                <div class="col-4 di-img2"></div>
-                <div class="col-2 di-img3"></div>
-                <div class="col-4 di-img4"></div>
+                <div class="col-2 di-img1 img-hover"></div>
+                <div class="col-4 di-img2 img-hover"></div>
+                <div class="col-2 di-img3 img-hover"></div>
+                <div class="col-4 di-img4 img-hover"></div>
                 
             </div>
               <div class="row img-set2">
-                <div class="col-4 di-img5"></div>
-                <div class="col-2 di-img6"></div>
-                <div class="col-4 di-img7"></div>
-                <div class="col-2 di-img8"></div>
+                <div class="col-4 di-img5 img-hover"></div>
+                <div class="col-2 di-img6 img-hover"></div>
+                <div class="col-4 di-img7 img-hover"></div>
+                <div class="col-2 di-img8 img-hover"></div>
                 
             </div>
         </div>
@@ -120,17 +120,17 @@
                  <div class="col-8">Wedding exterior exterior</div>
             </div>
             <div class="row img-set1">
-                <div class="col-2 wd-img1"></div>
-                <div class="col-4 wd-img2"></div>
-                <div class="col-2 wd-img3"></div>
-                <div class="col-4 wd-img4"></div>
+                <div class="col-2 wd-img1 img-hover"></div>
+                <div class="col-4 wd-img2 img-hover"></div>
+                <div class="col-2 wd-img3 img-hover"></div>
+                <div class="col-4 wd-img4 img-hover"></div>
                 
             </div>
               <div class="row img-set2">
-                <div class="col-4 wd-img5"></div>
-                <div class="col-2 wd-img6"></div>
-                <div class="col-4 wd-img7"></div>
-                <div class="col-2 wd-img8"></div>
+                <div class="col-4 wd-img5 img-hover"></div>
+                <div class="col-2 wd-img6 img-hover"></div>
+                <div class="col-4 wd-img7 img-hover"></div>
+                <div class="col-2 wd-img8 img-hover"></div>
                 
             </div>
         </div>
