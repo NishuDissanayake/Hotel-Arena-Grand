@@ -28,7 +28,7 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                DPrice: 12,000 LKR<br />
+                                Price: 12,000 LKR<br />
                                 Occupancy: 2 Adults, 1 Child<br /><br />
                                 Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
@@ -41,7 +41,7 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                DPrice: 12,000 LKR<br />
+                                Price: 12,000 LKR<br />
                                 Occupancy: 2 Adults, 1 Child<br /><br />
                                 Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
@@ -57,7 +57,7 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                DPrice: 12,000 LKR<br />
+                                Price: 12,000 LKR<br />
                                 Occupancy: 2 Adults, 1 Child<br /><br />
                                 Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
@@ -70,18 +70,14 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                DPrice: 12,000 LKR<br />
+                                Price: 12,000 LKR<br />
                                 Occupancy: 2 Adults, 1 Child<br /><br />
                                 Air conditioned, one attached bathroom</p>
                             <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            
-        </div>
-        
-        
+            </div>            
+        </div>                
     </body>
 </html>

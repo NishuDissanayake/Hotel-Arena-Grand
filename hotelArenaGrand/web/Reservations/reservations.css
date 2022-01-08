@@ -43,7 +43,7 @@ body
 
 .dropdown-text
 {
-    color: #3AAAB1;
+    color: #FFC164;
     font-size: 15px;
     text-align: right;
 }
@@ -76,27 +76,14 @@ label
 {
     margin-right: 100px;
     font-weight: bold;
-    
+    width: 200px;
+    color: #757575;
+    font-size: 14px;
 }
 
 .input
 {
-    max-width: 650px;
-}
-.form .input_field{
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.form .input_field label{
-    width: 200px;
-    color: #757575;
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-.form .input_field .input{
+    max-width: 450px;
     width: 100%;
     outline: none;
     border: 1px solid #FFC164;
@@ -106,7 +93,13 @@ label
     transition: all 0.3s ease;
 }
 
-.form .input_field .Num_input{
+.input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.Num_input{
     width: 100%;
     outline: none;
     border: 1px solid #FFC164;
@@ -118,11 +111,15 @@ label
     transition: all 0.3s ease;
 }
 
-.form .input_field .input:focus{
+.input:focus{
     border: 2px solid #FFC164;
 }
 
-.form .input_field .btn{
+.Num_input:focus{
+    border: 2px solid #FFC164;
+}
+
+.btn{
     max-width: 300px;
     width: 100%;
     padding: 8px 10px;
@@ -134,4 +131,6 @@ label
     cursor: pointer;
     border-radius: 15px;
     outline: none;
+    align-content: center;
 }
+

@@ -80,8 +80,7 @@ public final class reservations_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                            <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </div>\r\n");
-      out.write("                </div>\r\n");
-      out.write("               \r\n");
+      out.write("                </div>               \r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("        \r\n");

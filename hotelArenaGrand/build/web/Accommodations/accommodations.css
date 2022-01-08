@@ -22,11 +22,18 @@ body
 
 .btn
 {
-    background-color: #FFC164;
-    border-color: #FFC164;
-    color: black;
-    border-radius: 10px;
+    max-width: 300px;
     width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #FFC164;
+    margin-top: 40px;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+    align-content: center;
 }
 
 .card-header-text
