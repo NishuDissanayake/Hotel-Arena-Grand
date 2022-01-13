@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="cotainer signup-form">
-            <form method="POST" action="../login2.jsp">
+            <form method="POST" action="../login">
                 <h2>Sign up</h2>
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="Email Address">

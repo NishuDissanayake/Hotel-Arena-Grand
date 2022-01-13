@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -75,6 +76,9 @@ public class login extends HttpServlet {
             userHandling uh = new userHandling();
             boolean rslt = uh.loginUser(email, pwd);
             if (rslt == true) {
+                HttpSession session = request.getSession();
+                session.setMaxInactiveInterval(900);
+                session.setAttribute("Email", email);
                 response.sendRedirect("UserProfile/userprofile.jsp");
             } else {
                 out.println("Credentials invalid! <html><body><a href='Login/login.jsp'>Go Back</a></body></html>");

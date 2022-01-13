@@ -80,12 +80,14 @@ public final class reservations_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                            <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </div>\r\n");
-      out.write("                </div>               \r\n");
+      out.write("                </div>\r\n");
+      out.write("               \r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("        \r\n");
       out.write("        <div class=\"container form-container \">\r\n");
       out.write("            <div class=\"reserve2\">\r\n");
+      out.write("                <form method=\"POST\" action=\"\">\r\n");
       out.write("                <div class=\"form\">\r\n");
       out.write("                    <div class=\"input_field\">\r\n");
       out.write("                        <label>Number of Rooms</label>\r\n");
@@ -142,6 +144,7 @@ public final class reservations_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                    </div>\r\n");
       out.write("                    \r\n");
       out.write("                </div>\r\n");
+      out.write("                </form>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>        \r\n");
       out.write("    </body>\r\n");
