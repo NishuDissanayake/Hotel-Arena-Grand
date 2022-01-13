@@ -41,12 +41,14 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-                </div>               
+                </div>
+               
             </div>
         </div>
         
         <div class="container form-container ">
             <div class="reserve2">
+                <form method="POST" action="">
                 <div class="form">
                     <div class="input_field">
                         <label>Number of Rooms</label>
@@ -103,6 +105,7 @@
                     </div>
                     
                 </div>
+                </form>
             </div>
         </div>        
     </body>
