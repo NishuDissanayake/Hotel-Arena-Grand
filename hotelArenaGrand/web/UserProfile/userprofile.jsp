@@ -5,6 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    String email = (String) session.getAttribute("Email");
+
+    if (email != null) {%>
+    
 <!DOCTYPE html>
 <html>
     <head>
@@ -83,3 +89,7 @@
         </div>
     </body>
 </html>
+
+<% } else {
+        response.sendRedirect("../Login/login.jsp");
+    }%>
