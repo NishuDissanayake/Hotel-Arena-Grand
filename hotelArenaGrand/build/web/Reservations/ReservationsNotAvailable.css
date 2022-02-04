@@ -36,14 +36,13 @@ body
 
 .availability
 {
-   color: #3AAAB1;
+   color: #FFC164;
    font-size: 60px;
    font-weight: bold;
 }
 
 .reserve-content
 {
-    color: #3AAAB1;
     font-size: 15px;
     text-align: left;
 }
@@ -61,7 +60,7 @@ body
     padding: 8px 10px;
     font-size: 15px;
     border: 0;
-    background: #3AAAB1;
+    background: #FFC164;
     margin-top: 40px;
     color:#fff;
     cursor: pointer;

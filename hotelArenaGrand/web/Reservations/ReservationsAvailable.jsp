@@ -13,7 +13,9 @@
         <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./ReservationsNotAvailable.css" />
+        <link rel="stylesheet" href="./ReservationsAvailable.css" />
+                <link rel="stylesheet" href="./Reservations/ReservationsAvailable.css" />
+
     </head>
     
     <body>
@@ -31,11 +33,17 @@
                 <br/>
             </p>
             
-            <img class="thankyou" src="./../Images/thankyou.jpg"/>
+            
+            <img class="thankyou" src="<%= request.getContextPath()%>//../Images/thankyou.jpg"/>
             
             <div class="input_field">
-                <input type="submit" value="Proceed to Pay" class="btn" onclick="window.location.href='./ReservationsNotAvailable.jsp';">
+                <input type="submit" value="Proceed to Pay" class="btn" onclick="window.location.href='./Reservations/ReservationsPay.jsp';">
             </div>
+            <% 
+                    String roomType = (String) request.getAttribute("roomType");
+                    %>
+                    
+                    <h1>dd <%=roomType%></h1>
         </div>
     </body>
 </html>
