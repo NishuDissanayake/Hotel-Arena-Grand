@@ -76,23 +76,24 @@ public class reservation extends HttpServlet {
         String arrTime = request.getParameter("arrTime");
         String adults = request.getParameter("adults");
         String kids = request.getParameter("kids");
-        
+
         int I_num_of_rooms = Integer.parseInt(num_of_rooms);
         int I_adults = Integer.parseInt(adults);
         int I_kids = Integer.parseInt(kids);
-        
+
         reservations re = new reservations();
         try {
             List rooms = re.checkAvailability(roomType);
             int AVrooms = Integer.parseInt((String) rooms.get(0));
             int numOfRooms = Integer.parseInt((String) num_of_rooms);
+            int remainingRooms = AVrooms - numOfRooms;
 
-            if(AVrooms < numOfRooms){
+            if (AVrooms < numOfRooms) {
                 response.sendRedirect("./Reservations/ReservationsNotAvailable.jsp");
             } else {
                 int totalPeople = I_adults + I_kids;
                 double paymentAmount = 0;
-                if(roomType.equals("Regular")) {
+                if (roomType.equals("Regular")) {
                     paymentAmount = 3500 * I_num_of_rooms;
                 } else if (roomType.equals("SemiDeluxe")) {
                     paymentAmount = 5500 * I_num_of_rooms;
@@ -100,17 +101,25 @@ public class reservation extends HttpServlet {
                     paymentAmount = 8500 * I_num_of_rooms;
                 }
                 boolean rslt = re.reservations(roomType, I_num_of_rooms, fname, checkIn, checkOut, phoneNum, emailAdd, arrTime, I_adults, I_kids, totalPeople, paymentAmount);
-            
-                if(rslt) {
-                    out.println("<script type=\"text/javascript\">");
-                    out.println("alert('Reservtion Successful!');");
-                    out.println("location='index.jsp';");
-                    out.println("</script>");
+
+                if (rslt) {
+                    boolean rsltRoomUpdate = re.RoomUpdate(roomType, remainingRooms);
+                    if (rsltRoomUpdate) {
+                        out.println("<script type=\"text/javascript\">");
+                        out.println("alert('Rooms Available!');");
+                        out.println("location='Reservations/ReservationsPay.jsp';");
+                        out.println("</script>");
+                    } else {
+                        out.println("<script type=\"text/javascript\">");
+                        out.println("alert('Oops! Something went wrong!');");
+                        out.println("location='Reservations/reservations.jsp';");
+                        out.println("</script>");
+                    }
                 } else {
                     out.print("Failed");
                 }
             }
-            
+
         } catch (SQLException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
@@ -132,8 +141,7 @@ public class reservation extends HttpServlet {
 //            Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
 //        } catch (SQLException ex) {
 //            Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-
+//        }*/
     }
 
     /**

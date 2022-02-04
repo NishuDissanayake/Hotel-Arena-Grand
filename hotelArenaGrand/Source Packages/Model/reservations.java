@@ -1,4 +1,3 @@
-
 package Model;
 
 import java.sql.PreparedStatement;
@@ -9,24 +8,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class reservations {
+
     dbConnection dbcon = new dbConnection();
     int state = 0;
     Statement statement = null;
     ResultSet resultSet = null;
-    
-     public List checkAvailability(String RoomType) throws SQLException, ClassNotFoundException {
+
+    public List checkAvailability(String RoomType) throws SQLException, ClassNotFoundException {
         List searchList = new ArrayList();
         statement = dbcon.createConnection().createStatement();
-        String sql = "SELECT * FROM rooms WHERE roomType LIKE '" + RoomType + "'"; 
+        String sql = "SELECT * FROM rooms WHERE roomType LIKE '" + RoomType + "'";
         resultSet = statement.executeQuery(sql);
-        
-        while(resultSet.next()){
+
+        while (resultSet.next()) {
             searchList.add(resultSet.getString("roomAmount"));
         }
         return searchList;
     }
-     
-     public boolean reservations(String roomType, int num_of_rooms, String fname, String checkIn, String checkOut, String phoneNum, String emailAdd, String arrTime, int adults, int kids, int totalPeople, double paymentAmount) throws ClassNotFoundException, SQLException {
+
+    public boolean reservations(String roomType, int num_of_rooms, String fname, String checkIn, String checkOut, String phoneNum, String emailAdd, String arrTime, int adults, int kids, int totalPeople, double paymentAmount) throws ClassNotFoundException, SQLException {
 
         PreparedStatement pr = dbcon.createConnection().prepareStatement("INSERT INTO reservations(roomType, numberOfRooms, fullName, phoneNumber, email, checkIn, chackOut, arrivalTime, adults, kids, totalPeople, paymentAmount ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
         pr.setString(1, roomType);
@@ -49,6 +49,23 @@ public class reservations {
         } else {
             return false;
         }
+    }
+
+    public boolean RoomUpdate(String roomType, int remainingRooms) throws ClassNotFoundException, SQLException {
+
+        String query = "UPDATE rooms SET roomAmount=? WHERE roomType LIKE ?";
+        PreparedStatement preparedStmt = dbcon.createConnection().prepareStatement(query);
+        preparedStmt.setInt(1, remainingRooms);
+        preparedStmt.setString(2, roomType);
+        // execute the java preparedstatement
+        int i = preparedStmt.executeUpdate();
+
+        if (i > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
 }

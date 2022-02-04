@@ -69,7 +69,7 @@
  
                     <div class="input_field">
                         <label>Estimated Arrival Time</label>
-                        <input type="text" class="input" name="arrTime" required>
+                        <input type="time" class="input" name="arrTime" required>
                     </div>
                     <div class="row">
                         <div class="col-6">
@@ -88,6 +88,7 @@
                     <div class="input_field">
                         <input type="submit" value="Check Availability" class="btn">
                     </div>
+                    
                 </form>
             </div>
         </div>        

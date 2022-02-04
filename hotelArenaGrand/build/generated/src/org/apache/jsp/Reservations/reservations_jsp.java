@@ -108,7 +108,7 @@ public final class reservations_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write(" \r\n");
       out.write("                    <div class=\"input_field\">\r\n");
       out.write("                        <label>Estimated Arrival Time</label>\r\n");
-      out.write("                        <input type=\"text\" class=\"input\" name=\"arrTime\" required>\r\n");
+      out.write("                        <input type=\"time\" class=\"input\" name=\"arrTime\" required>\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"row\">\r\n");
       out.write("                        <div class=\"col-6\">\r\n");
@@ -127,7 +127,7 @@ public final class reservations_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                    <div class=\"input_field\">\r\n");
       out.write("                        <input type=\"submit\" value=\"Check Availability\" class=\"btn\">\r\n");
       out.write("                    </div>\r\n");
-      out.write("\r\n");
+      out.write("                    \r\n");
       out.write("                </form>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>        \r\n");
