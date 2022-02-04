@@ -3,14 +3,24 @@
     Created on : Dec 26, 2021, 7:18:38 PM
     Author     : HP
 --%>
-
+<%@page import="Model.dbConnection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
     String email = (String) session.getAttribute("AdminEmail");
 
     if (email != null) {%>
-    
+
+<%
+    Connection connection = null;
+    Statement statement = null;
+    ResultSet resultSet = null;
+%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -33,123 +43,44 @@
                             <th scope="col">Email</th>
                             <th scope="col">Check-In</th>
                             <th scope="col">Check-Out</th>
-                            <th scope="col">Duration</th>
-                            <th scope="col">Telephone</th>
                             <th scope="col">Adults</th>
                             <th scope="col">Kids</th>
                             <th scope="col">Manage</th>
                         </tr>
                     </thead>
+                    <%
+                        try {
+                            dbConnection con = new dbConnection();
+                            statement = con.createConnection().createStatement();
+                            String sql = "SELECT * FROM reservations";
+                            resultSet = statement.executeQuery(sql);
+
+                            while (resultSet.next()) {%>
                     <tbody>
                         <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
+                            <td><%=resultSet.getString("reservationID")%></td>
+                            <td><%=resultSet.getString("fullname")%></td>
+                            <td><%=resultSet.getString("email")%></td>
+                            <td><%=resultSet.getString("checkIn")%></td>
+                            <td><%=resultSet.getString("chackOut")%></td>
+                            <td><%=resultSet.getString("adults")%></td>
+                            <td><%=resultSet.getString("kids")%></td>
+                            <td>
+                                <form action="../deleteBooking" method="POST">
+                                    <input type="hidden" name="bookingID" value="<%=resultSet.getString("reservationID")%>">
+                                    <input type="submit" value="Delete" class="btn btn-dark delete-booking"/>
+                                </form>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Mahima Induwara</td>
-                            <td>mahi97@gmail.com</td>
-                            <td>01-05-2021</td>
-                            <td>01-08-2021</td>
-                            <td>3 Days</td>
-                            <td>0757867543</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td><a href="#" class="btn btn-primary delete-booking">Delete</a></td>
-                        </tr>
+
                     </tbody>
+                    <%
+                            }
+                            connection.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    %>
                 </table>
             </div>
         </div>
@@ -172,15 +103,11 @@
                         <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
                         <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                    </div>
-        </form>
-    </div>
-</div>
-</body>
+                    
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
 
 <% } else {

@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Mahima/Desktop/New%20folder/ArenaGrande/Hotel-Arena-Grand/hotelArenaGrand/web/Reservations/ReservationsPay.jsp</file>
-            <file>file:/C:/Users/Mahima/Desktop/New%20folder/ArenaGrande/Hotel-Arena-Grand/hotelArenaGrand/web/Reservations/Paypal.jsp</file>
-=======
-            <file>file:/C:/Users/User/Desktop/java%205/Hotel-Arena-Grand/hotelArenaGrand/web/AdminDashboard/admindashboard.jsp</file>
-            <file>file:/C:/Users/User/Desktop/java%205/Hotel-Arena-Grand/hotelArenaGrand/web/UserProfile/userprofile.jsp</file>
-            <file>file:/C:/Users/User/Desktop/java%205/Hotel-Arena-Grand/hotelArenaGrand/Source%20Packages/Controller/adminlogin.java</file>
->>>>>>> c59c1e34045d0d22d3ade4c56ded28b3cd8fe47d
+            <file>file:/C:/Users/HP/Desktop/Java/Hotel-Arena-Grand/hotelArenaGrand/Source%20Packages/Controller/deleteBooking.java</file>
+            <file>file:/C:/Users/HP/Desktop/Java/Hotel-Arena-Grand/hotelArenaGrand/Source%20Packages/Model/dbConnection.java</file>
+            <file>file:/C:/Users/HP/Desktop/Java/Hotel-Arena-Grand/hotelArenaGrand/web/AdminDashboard/admindashboard.jsp</file>
+            <file>file:/C:/Users/HP/Desktop/Java/Hotel-Arena-Grand/hotelArenaGrand/Source%20Packages/Controller/login.java</file>
         </group>
     </open-files>
 </project-private>
