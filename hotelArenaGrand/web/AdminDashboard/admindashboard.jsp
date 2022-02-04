@@ -43,6 +43,8 @@
                             <th scope="col">Email</th>
                             <th scope="col">Check-In</th>
                             <th scope="col">Check-Out</th>
+                            <th scope="col">Room Type</th>
+                            <th scope="col">No. Of Rooms</th>
                             <th scope="col">Adults</th>
                             <th scope="col">Kids</th>
                             <th scope="col">Manage</th>
@@ -63,11 +65,16 @@
                             <td><%=resultSet.getString("email")%></td>
                             <td><%=resultSet.getString("checkIn")%></td>
                             <td><%=resultSet.getString("chackOut")%></td>
+                            <td><%=resultSet.getString("roomType")%></td>
+                            <td><%=resultSet.getString("numberOfRooms")%></td>
                             <td><%=resultSet.getString("adults")%></td>
                             <td><%=resultSet.getString("kids")%></td>
+                            <%
+                                String reservationID = resultSet.getString("reservationID");
+                            %>    
                             <td>
                                 <form action="../deleteBooking" method="POST">
-                                    <input type="hidden" name="bookingID" value="<%=resultSet.getString("reservationID")%>">
+                                    <input type="hidden" name="bookingID" value="<%=reservationID%>">
                                     <input type="submit" value="Delete" class="btn btn-dark delete-booking"/>
                                 </form>
                             </td>
@@ -87,23 +94,23 @@
         <div class="container update-booking">
             <h2>Update Booking</h2>
             <div class="container table-2">
-                <form>
+                <form method="POST" action="../updateBooking">
                     <div class="row row-1">
                         <div class="col-4"><span class="from-txt">Update by Booking ID</div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4 justify-content-end"><a href="#" class="btn btn-primary update-booking-btn">Update Now!</a></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID" name="reservationID"></div>
+                        <div class="col-4 justify-content-end"><button class="btn btn-primary update-booking-btn" type="submit">Update Now!</button></div>
                     </div>
                     <div class="row">
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Number of Rooms" name="noRooms"></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Room Type" name="roomType"></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Check In" name="checkIn"></div>
                     </div>
                     <div class="row">
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Booking ID"></div>
-                    </div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Check Out" name="checkOut"></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Adults" name="adults"></div>
+                        <div class="col-4"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Kids" name="kids"></div>
                     
+                    </div>
                 </form>
             </div>
         </div>

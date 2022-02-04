@@ -67,5 +67,60 @@ public class reservations {
         }
 
     }
+    
+    public boolean roomDeleteUpdate(String roomType, int newRooms) throws ClassNotFoundException, SQLException {
+
+        String query = "UPDATE rooms SET roomAmount=? WHERE roomType LIKE ?";
+        PreparedStatement preparedStmt = dbcon.createConnection().prepareStatement(query);
+        preparedStmt.setInt(1, newRooms);
+        preparedStmt.setString(2, roomType);
+        // execute the java preparedstatement
+        int i = preparedStmt.executeUpdate();
+
+        if (i > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+    
+    public boolean roomDelete(int roomID) throws ClassNotFoundException, SQLException {
+
+        String query = "DELETE FROM reservations WHERE reservationID = ?";
+        PreparedStatement preparedStmt = dbcon.createConnection().prepareStatement(query);
+        preparedStmt.setInt(1, roomID);
+        // execute the java preparedstatement
+        int i = preparedStmt.executeUpdate();
+
+        if (i > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+    
+    public boolean reservationUpdate(int I_ID, int I_num_of_rooms, String roomType, String checkIn, String checkOut, int I_adults, int I_kids) throws ClassNotFoundException, SQLException {
+
+        String query = "UPDATE reservations SET roomType=?, numberOfRooms=?, checkIn=?, chackOut=?, adults=?, kids=?, WHERE reservationsID=?";
+        PreparedStatement preparedStmt = dbcon.createConnection().prepareStatement(query);
+        preparedStmt.setString(1, roomType);
+        preparedStmt.setInt(2, I_num_of_rooms);
+        preparedStmt.setString(3, checkIn);
+        preparedStmt.setString(4, checkOut);
+        preparedStmt.setInt(5, I_adults);
+        preparedStmt.setInt(6, I_kids);
+        preparedStmt.setInt(7, I_ID);
+        
+        int i = preparedStmt.executeUpdate();
+
+        if (i > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 
 }

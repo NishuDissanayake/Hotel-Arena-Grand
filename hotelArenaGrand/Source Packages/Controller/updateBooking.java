@@ -9,7 +9,6 @@ import Model.reservations;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -22,8 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author HP
  */
-@WebServlet(name = "deleteBooking", urlPatterns = {"/deleteBooking"})
-public class deleteBooking extends HttpServlet {
+@WebServlet(name = "updateBooking", urlPatterns = {"/updateBooking"})
+public class updateBooking extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,10 +41,10 @@ public class deleteBooking extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet deleteBooking</title>");
+            out.println("<title>Servlet updateBooking</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet deleteBooking at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet updateBooking at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -81,48 +80,41 @@ public class deleteBooking extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        /*String bookingID = request.getParameter("reservationID");
-        String num_of_rooms = request.getParameter("numberOfRooms");
+        String resID = request.getParameter("reservationID");
         String roomType = request.getParameter("roomType");
-
-        int I_bookingID = Integer.parseInt(bookingID);
-       int I_num_of_rooms = Integer.parseInt(num_of_rooms);
+        String num_of_rooms = request.getParameter("noRooms");
+        String checkIn = request.getParameter("checkIn");
+        String checkOut = request.getParameter("checkOut");
+        String adults = request.getParameter("adults");
+        String kids = request.getParameter("kids");
+/*
+        int I_ID = Integer.parseInt(resID);
+        int I_num_of_rooms = Integer.parseInt(num_of_rooms);
+        int I_adults = Integer.parseInt(adults);
+        int I_kids = Integer.parseInt(kids);*/
         
-        out.println(bookingID);
-        out.println(I_num_of_rooms);
-        out.println(roomType);
+        out.println(resID);
+   /*     
 
         reservations re = new reservations();
         try {
-            List rooms = re.checkAvailability(roomType);
-            int AVrooms = Integer.parseInt((String) rooms.get(0));
-            int newRooms = AVrooms + I_num_of_rooms;
-
-            boolean rsltRoomDelete = re.roomDelete(I_bookingID);
-            if(rsltRoomDelete)
-            {
-            boolean rsltRoomUpdate = re.roomDeleteUpdate(roomType, newRooms);
-            if (rsltRoomUpdate) {
+            boolean rslt = re.reservationUpdate(I_ID, I_num_of_rooms, roomType, checkIn, checkOut, I_adults, I_kids);
+            if (rslt) {
                 out.println("<script type=\"text/javascript\">");
-                out.println("alert('Reservation Deleted Successfully!');");
+                out.println("alert('Update Successfull!');");
                 out.println("</script>");
             } else {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");
                 out.println("</script>");
-            }}
-            else
-            {
-                out.println("<script type=\"text/javascript\">");
-                out.println("alert('Oops! Something went wrong!');");
-                out.println("</script>");
             }
-
-        } catch (SQLException ex) {
+        }
+         catch (SQLException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+        }
+*/
     }
 
     /**
