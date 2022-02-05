@@ -38,7 +38,7 @@ body
 
 .img1
 {
-    background-image: url('./../Images/Home Header.jpg');
+    background-image: url('./../Images/sc-rm1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 16vh;
@@ -47,7 +47,76 @@ body
 
 .img2
 {
-    background-image: url('./../Images/Home Header.jpg');
+    background-image: url('./../Images/sc-rm2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+}
+
+
+.img3
+{
+    background-image: url('./../Images/sc-rs1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+
+.img4
+{
+    background-image: url('./../Images/sc-rs2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+}
+
+.img5
+{
+    background-image: url('./../Images/sc-ev1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+
+.img6
+{
+    background-image: url('./../Images/sc-ev2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+}
+
+.img7
+{
+    background-image: url('./../Images/sc-sp1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+
+.img8
+{
+    background-image: url('./../Images/sc-sp2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+}
+
+.img9
+{
+    background-image: url('./../Images/sc-be1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16vh;
+    margin-bottom: 10px;
+}
+
+.img10
+{
+    background-image: url('./../Images/sc-be2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 16vh;
