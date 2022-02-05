@@ -4,9 +4,17 @@
         <servlet-name>Reservation</servlet-name>
         <servlet-class>Controller.Reservation</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ContactUsForm</servlet-name>
+        <servlet-class>Controller.ContactUsForm</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Reservation</servlet-name>
         <url-pattern>/Reservation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactUsForm</servlet-name>
+        <url-pattern>/ContactUsForm</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
