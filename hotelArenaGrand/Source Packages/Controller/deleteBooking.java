@@ -37,18 +37,7 @@ public class deleteBooking extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet deleteBooking</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet deleteBooking at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -81,16 +70,13 @@ public class deleteBooking extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        /*String bookingID = request.getParameter("reservationID");
-        String num_of_rooms = request.getParameter("numberOfRooms");
+        String bookingID = request.getParameter("bookingID");
+        String num_of_rooms = request.getParameter("roomCount");
         String roomType = request.getParameter("roomType");
 
         int I_bookingID = Integer.parseInt(bookingID);
        int I_num_of_rooms = Integer.parseInt(num_of_rooms);
         
-        out.println(bookingID);
-        out.println(I_num_of_rooms);
-        out.println(roomType);
 
         reservations re = new reservations();
         try {
@@ -105,10 +91,12 @@ public class deleteBooking extends HttpServlet {
             if (rsltRoomUpdate) {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Reservation Deleted Successfully!');");
+                out.println("location='AdminDashboard/admindashboard.jsp';");
                 out.println("</script>");
             } else {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");
+                out.println("location='AdminDashboard/admindashboard.jsp';");
                 out.println("</script>");
             }}
             else
@@ -122,7 +110,8 @@ public class deleteBooking extends HttpServlet {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+        }
+        
     }
 
     /**

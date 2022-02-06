@@ -71,13 +71,56 @@
                             <td><%=resultSet.getString("kids")%></td>
                             <%
                                 String reservationID = resultSet.getString("reservationID");
+                                String roomType = resultSet.getString("roomType");
+                                String roomCount = resultSet.getString("numberOfRooms");
                             %>    
                             <td>
                                 <form action="../deleteBooking" method="POST">
                                     <input type="hidden" name="bookingID" value="<%=reservationID%>">
+                                    <input type="hidden" name="roomType" value="<%=roomType%>">
+                                    <input type="hidden" name="roomCount" value="<%=roomCount%>">
                                     <input type="submit" value="Delete" class="btn btn-dark delete-booking"/>
                                 </form>
                             </td>
+                        </tr>
+
+                    </tbody>
+                    <%
+                            }
+                            connection.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    %>
+                </table>
+            </div>
+        </div>
+                <div class="container admin-table">
+            <h2>Feedback Form</h2>
+            <div class="container table-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Reservation ID</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <%
+                        try {
+                            dbConnection con = new dbConnection();
+                            statement = con.createConnection().createStatement();
+                            String sql = "SELECT * FROM feedback";
+                            resultSet = statement.executeQuery(sql);
+
+                            while (resultSet.next()) {%>
+                    <tbody>
+                        <tr>
+                            <td><%=resultSet.getInt("feedbackid")%></td>
+                            <td><%=resultSet.getString("name")%></td>
+                            <td><%=resultSet.getString("phone")%></td>
+                            <td><%=resultSet.getString("message")%></td>
                         </tr>
 
                     </tbody>

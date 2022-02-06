@@ -35,19 +35,7 @@ public class updateBooking extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet updateBooking</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet updateBooking at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -77,6 +65,7 @@ public class updateBooking extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
@@ -87,34 +76,43 @@ public class updateBooking extends HttpServlet {
         String checkOut = request.getParameter("checkOut");
         String adults = request.getParameter("adults");
         String kids = request.getParameter("kids");
-/*
+
         int I_ID = Integer.parseInt(resID);
         int I_num_of_rooms = Integer.parseInt(num_of_rooms);
         int I_adults = Integer.parseInt(adults);
-        int I_kids = Integer.parseInt(kids);*/
+        int I_kids = Integer.parseInt(kids);
+        /*  
+        out.println(I_ID);
+        out.println(roomType);
+        out.println(I_num_of_rooms);
+        out.println(checkIn);
+        out.println(checkOut);
+        out.println(I_adults);
+        out.println(I_kids);
         
-        out.println(resID);
-   /*     
+         */
 
-        reservations re = new reservations();
         try {
-            boolean rslt = re.reservationUpdate(I_ID, I_num_of_rooms, roomType, checkIn, checkOut, I_adults, I_kids);
+            reservations re = new reservations();
+            boolean rslt = re.reservationUpdate(roomType, I_num_of_rooms, checkIn, checkOut, I_adults, I_kids, I_ID);
+
             if (rslt) {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Update Successfull!');");
+                out.println("location='AdminDashboard/admindashboard.jsp';");
                 out.println("</script>");
             } else {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");
+                out.println("location='AdminDashboard/admindashboard.jsp';");
                 out.println("</script>");
             }
-        }
-         catch (SQLException ex) {
+        } catch (SQLException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         }
-*/
+
     }
 
     /**

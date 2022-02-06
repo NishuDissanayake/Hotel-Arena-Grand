@@ -101,9 +101,9 @@ public class reservations {
 
     }
     
-    public boolean reservationUpdate(int I_ID, int I_num_of_rooms, String roomType, String checkIn, String checkOut, int I_adults, int I_kids) throws ClassNotFoundException, SQLException {
+    public boolean reservationUpdate(String roomType, int I_num_of_rooms, String checkIn, String checkOut, int I_adults, int I_kids, int I_ID) throws ClassNotFoundException, SQLException {
 
-        String query = "UPDATE reservations SET roomType=?, numberOfRooms=?, checkIn=?, chackOut=?, adults=?, kids=?, WHERE reservationsID=?";
+        String query = "UPDATE reservations SET roomType=?, numberOfRooms=?, checkIn=?, chackOut=?, adults=?, kids=? WHERE reservationID=?";
         PreparedStatement preparedStmt = dbcon.createConnection().prepareStatement(query);
         preparedStmt.setString(1, roomType);
         preparedStmt.setInt(2, I_num_of_rooms);
