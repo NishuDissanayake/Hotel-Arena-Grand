@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.Contact;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -32,19 +33,7 @@ public class ContactUsForm extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ContactUsForm</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ContactUsForm at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -73,41 +62,38 @@ public class ContactUsForm extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+        processRequest(request, response);
+
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter(); 
-        try
-        {
-            String Fullname = request.getParameter("Fname");
-            
-            int Phonenumber = request.getParameter("PhoneNum");
-            
-            String message = request.getParameter("Message");
-            
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/arena_grand","root","");
-            
-            PreparedStatement pst = con.prepareStatement("insert into feedback values(?,?)");
-            pst.setString(1, Fullname);
-            pst.setInt(2, Phonenumber);
-            pst.setString(3, message);
-            
-            int i = pst.executeUpdate();
-            
-            if (i!= 0)
-            {
-                out.println("<br>Record has been inserted");
+        PrintWriter out = response.getWriter();
+
+        String Fullname = request.getParameter("Fname");
+        String Phonenumber = request.getParameter("PhoneNum");
+        String message = request.getParameter("Message");
+
+        try {
+            Contact c = new Contact();
+            boolean rslt = c.contactus(Fullname, Phonenumber, message);
+            if (rslt) {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Feedback Sent!');");
+                out.println("location='index.jsp';");
+                out.println("</script>");
+
+            } else {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Oops! Something went wwrong!');");
+                out.println("location='index.jsp';");
+                out.println("</script>");
             }
-            else{
-        out.println("failed to insert the data");
-      }
+        } catch (Exception e) {
+            out.println(e);
+        }
+
     }
-    catch (Exception e){
-      out.println(e);
-    }
-            
-        };
-    }
+
+    ;
+    
 
     /**
      * Returns a short description of the servlet.

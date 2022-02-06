@@ -32,23 +32,23 @@
                 </div>
                 <div class="col-8 footer-form">
                     <h3>Contact Us</h3>
-                    <form method="POST">
+                    <form method="POST" action="ContactUsForm">
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-4 col-form-label">Name</label>
                         <div class="col-sm-8">
-                            <input type="text" name="Fname" class="form-control" id="inputPassword" placeholder="Full Name">
+                            <input type="text" name="Fname" class="form-control" id="inputPassword" placeholder="Full Name" required>
                         </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-4 col-form-label">Phone Number</label>
                         <div class="col-sm-8">
-                            <input type="text" name="PhoneNum" class="form-control" id="inputPassword" placeholder="07X-XXXXXXX">
+                            <input type="text" name="PhoneNum" class="form-control" id="inputPassword" placeholder="07X-XXXXXXX" required>
                         </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-4 col-form-label">Message</label>
                         <div class="col-sm-8">
-                            <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         </div>
                         </div>
                         <div class="form-group row btn-form-group">
