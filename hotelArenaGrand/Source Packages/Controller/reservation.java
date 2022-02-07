@@ -109,6 +109,10 @@ public class reservation extends HttpServlet {
                         out.println("alert('Rooms Available!');");
                         out.println("location='Reservations/ReservationsPay.jsp';");
                         out.println("</script>");
+                        
+                        String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+fname+"&email="+emailAdd+"";
+                        response.sendRedirect(redirectURL);
+
                     } else {
                         out.println("<script type=\"text/javascript\">");
                         out.println("alert('Oops! Something went wrong!');");
