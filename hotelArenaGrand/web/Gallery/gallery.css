@@ -487,12 +487,3 @@ body
     box-shadow: 6px 6px 40px 10px #757575;
     transform: translateY(-10px);
 }
-
-.img-strip
-{
-    background-image: url('./../Images/Strip.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25px;
-    
-}

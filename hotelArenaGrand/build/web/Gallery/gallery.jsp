@@ -20,18 +20,17 @@
             <h1 class="header-text">GALLERY</h1>
         </div>
         <div class="container btn-group">
-           <button type="button" class="btn btn-outline-primary">Exterior</button>
-           <button type="button" class="btn btn-outline-primary">Interior</button>
-           <button type="button" class="btn btn-outline-primary">Beach & Pool</button>
-           <button type="button" class="btn btn-outline-primary">Dinning</button>
-           <button type="button" class="btn btn-outline-primary">Wedding</button>
+            <button type="button" class="btn btn-outline-primary"> <a href="#Exterior" style="text-decoration: none;"> Exterior </a> </button>
+            <button type="button" class="btn btn-outline-primary"> <a href="#Interior" style="text-decoration: none;"> Interior </a> </button>
+            <button type="button" class="btn btn-outline-primary"> <a href="#Beach" style="text-decoration: none;"> Beach & Pool </a> </button>
+            <button type="button" class="btn btn-outline-primary"> <a href="#Dining" style="text-decoration: none;"> Dining </a> </button>
+            <button type="button" class="btn btn-outline-primary"> <a href="#Wedding" style="text-decoration: none;"> Wedding </a> </button>
            
         </div>
         
-        <div class=" container img-section">
+        <div class=" container img-section" id="Exterior">
             <div class="row main-text">
                 <div class="col-4">Exterior</div>
-                 <div class="col-8 img-strip"></div>
             </div>
             <div class="row img-set1">
                 <div class="col-2 ex-img1 img-hover"></div>
@@ -49,10 +48,9 @@
             </div>
         </div>
         
-         <div class=" container img-section">
+         <div class=" container img-section" id="Interior">
             <div class="row main-text">
                 
-                 <div class="col-8">Interior Interior Interior</div>
                  <div class="col-4">Interior</div>
             </div>
             <div class="row img-set1">
@@ -71,10 +69,9 @@
             </div>
         </div>
         
-        <div class=" container img-section">
+        <div class=" container img-section"id="Beach">
             <div class="row main-text">
                 <div class="col-4">Beach & Pool</div>
-                 <div class="col-8">Beach & pool</div>
             </div>
             <div class="row img-set1">
                 <div class="col-2 bp-img1 img-hover"></div>
@@ -92,10 +89,9 @@
             </div>
         </div>
         
-         <div class=" container img-section">
+         <div class=" container img-section" id="Dining">
             <div class="row main-text">
-                
-                 <div class="col-8">Dinning Dinning</div>
+
                  <div class="col-4">Dinning</div>
             </div>
             <div class="row img-set1">
@@ -114,10 +110,9 @@
             </div>
         </div>
         
-        <div class=" container img-section">
+        <div class=" container img-section"id="Wedding">
             <div class="row main-text">
                 <div class="col-4">Wedding</div>
-                 <div class="col-8">Wedding exterior exterior</div>
             </div>
             <div class="row img-set1">
                 <div class="col-2 wd-img1 img-hover"></div>

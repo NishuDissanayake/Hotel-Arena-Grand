@@ -31,21 +31,21 @@
                 </div>
                 <div class="col-3">
                     <div class="card first-card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Hotel Image">
+                        <img src="./Images/hm-pool.jpg" class="card-img-top" alt="Hotel Image">
                         <div class="card-body">
                             <p class="card-text">
-                                <span class="card-header-text">Deluxe Room</span><br /><br />
-Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation deluxe rooms become a home away from home. Each room features a king of facilities and incredible sea views.</p>
+                                <span class="card-header-text">Pool</span><br /><br />
+A stunning pool perched on the roof top terrace of the hotel, to give you uninterrupted views of the island and its surrounding bays of turquoise and azure blue waters. Perfect for cooking dip in the day or to unwind and watch the vibrant sunsets so infamous with Colombo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Hotel Image">
+                        <img src="./Images/hm-rs.jpg" class="card-img-top" alt="Hotel Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Restaurant</span><br /><br />
-Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation deluxe rooms become a home away from home. Each room features a king of facilities and incredible sea views.</p>
+Indulge in a wide selection of Sri Lankan delicacies with the best hand-picked foods from around the world in our A La Carte menu. We choose only the freshest locally sourced ingredients to ensure the best culinary experience.</p>
                         </div>
                     </div>
                 </div>
@@ -61,12 +61,23 @@ Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation
             <div class="row">
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
+                        <img src="./Images/hm-rm1.jpg" class="card-img-top" alt="Card Image">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="card-header-text">Regular Room</span><br /><br />
+                                Enjoy breathtaking views from the privacy of your own balcony, the Deluxe Sea view Room is a cosy base with a smart en-suite bathroom. </p>
+                            <div class="button-book"><a href="./Reservations/reservations.jsp" class="btn btn-primary">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
                         <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
-                                <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
-                            <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
+                                <span class="card-header-text">Semi Deluxe Room</span><br /><br />
+                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities. This lavish room has being designed with an element of elegance & has a panoramic view of the Ocean. Contemporary spacious design with wooden flooring, the Semi deluxe Room is the Hotel’s signature accommodation category that ensures total comfort.</p>
+                            <div class="button-book"><a href="./Reservations/reservations.jsp" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>
@@ -76,19 +87,9 @@ Designed to inspire rest and relaxation, our sleek, a modern hotel accommodation
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
-                            <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
-                        <div class="card-body">
-                            <p class="card-text">
-                                <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities and incredible sea views.</p>
-                            <div class="button-book"><a href="#" class="btn btn-primary">Book Now</a></div>
+                                Rooms are equipped with all modern amenities and offer you a spectacular view of the Ocean both day & night. Our Deluxe Rooms are designed to inspire rest and relaxation with comfort & elegance in mind. Situated in the upper floors of the property, larger balconies featuring amazing sea views that blend seamlessly in to the azure of the Indian Ocean all equipped with furnishings made from Maldives’ indigenous materials.
+                            </p>
+                            <div class="button-book"><a href="./Reservations/reservations.jsp" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>

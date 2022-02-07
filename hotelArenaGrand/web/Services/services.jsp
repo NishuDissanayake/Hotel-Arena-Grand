@@ -46,7 +46,7 @@
                             </div>
                             <div class="col-8 content2"> 
                                 <h4 class="card-title">Restaurant</h4>
-                                <p class="card-text">The Arena Grand Hotel, luxurious and detail oriented, is a paradise for relaxation. Every suite includes a plunge pool, and spa services are available in the suite upon request. Dining is top notch, and all sorts of cultural and adventure experiences can be had around the area, from amazing foods to sea diving to walking tours of the local village. The main pool overlooks the ocean in a bay lined with coconut palms, and you won’t want to leave once you get there.</p>
+                                <p class="card-text">Indulge in a wide selection of Sri Lankan delicacies with the best hand-picked foods from around the world in our A La Carte menu. We choose only the freshest ingredients from local sources to ensure the best culinary experience.</p>
                             </div>
                         </div>                        
                     </div>
@@ -58,7 +58,9 @@
                         <div class="row">
                             <div class="col-8 content"> 
                                 <h4 class="card-title">Events</h4>
-                                <p class="card-text">The Arena Grand Hotel, luxurious and detail oriented, is a paradise for relaxation. Every suite includes a plunge pool, and spa services are available in the suite upon request. Dining is top notch, and all sorts of cultural and adventure experiences can be had around the area, from amazing foods to sea diving to walking tours of the local village. The main pool overlooks the ocean in a bay lined with coconut palms, and you won’t want to leave once you get there.</p>
+                                <p class="card-text">
+The hotel’s Grand Ballroom offers an elegant location to host almost any function; from elegant wedding receptions, sophisticated dinner parties, to trade shows, concerts, cocktails or anything that may require a celebratory atmosphere. Has a capacity of 80 packs an intimate small banquet area, also ideal for conferences and stalls.
+</p>
                             </div>
                             <div class="col-4">
                                 <div class="row img5"></div>
@@ -78,7 +80,7 @@
                             </div>
                             <div class="col-8 content2"> 
                                 <h4 class="card-title">Spa</h4>
-                                <p class="card-text">The Arena Grand Hotel, luxurious and detail oriented, is a paradise for relaxation. Every suite includes a plunge pool, and spa services are available in the suite upon request. Dining is top notch, and all sorts of cultural and adventure experiences can be had around the area, from amazing foods to sea diving to walking tours of the local village. The main pool overlooks the ocean in a bay lined with coconut palms, and you won’t want to leave once you get there.</p>
+                                <p class="card-text">The picture perfect destination rich in blue ocean waves and pristine sands is the perfect place for you to rediscover yourself. Part of the reason is the calm and stillness that the serene atmosphere provides, making it the perfect ground for spiritual growth. Combine this with the signature treatments at the hotel Arena Grand spa and you have a holiday that will linger in your mind long after you have left.</p>
                             </div>
                         </div>                        
                     </div>
@@ -90,7 +92,7 @@
                         <div class="row">
                             <div class="col-8 content"> 
                                 <h4 class="card-title">Beach</h4>
-                                <p class="card-text">The Arena Grand Hotel, luxurious and detail oriented, is a paradise for relaxation. Every suite includes a plunge pool, and spa services are available in the suite upon request. Dining is top notch, and all sorts of cultural and adventure experiences can be had around the area, from amazing foods to sea diving to walking tours of the local village. The main pool overlooks the ocean in a bay lined with coconut palms, and you won’t want to leave once you get there.</p>
+                                <p class="card-text">With an idyllic beach strip and the dazzling Indian Ocean, we have the perfect setting for a seamless Sri Lanka beach wedding. Our location makes us an ideal choice for a ceremony along the shore, bringing with it, a sense of romance. From a traditional ceremony with family and friends to an intimate exchange of vows while the sun sets, a beach wedding can be customized to each couples requirements, set amidst a scintillating coastal backdrop.</p>
                             </div>
                             <div class="col-4">
                                 <div class="row img9"></div>
