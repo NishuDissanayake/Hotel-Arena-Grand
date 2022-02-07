@@ -22,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author HP
  */
-@WebServlet(name = "deleteBooking", urlPatterns = {"/deleteBooking"})
-public class deleteBooking extends HttpServlet {
+@WebServlet(name = "deleteUserBooking", urlPatterns = {"/deleteUserBooking"})
+public class deleteUserBooking extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -67,6 +67,7 @@ public class deleteBooking extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
@@ -91,19 +92,19 @@ public class deleteBooking extends HttpServlet {
             if (rsltRoomUpdate) {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Reservation Deleted Successfully!');");
-                out.println("location='AdminDashboard/admindashboard.jsp';");
+                out.println("location='UserProfile/userprofile.jsp';");
                 out.println("</script>");
             } else {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");
-                out.println("location='AdminDashboard/admindashboard.jsp';");
+                out.println("location='UserProfile/userprofile.jsp';");
                 out.println("</script>");
             }}
             else
             {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");
-                out.println("location='AdminDashboard/admindashboard.jsp';");
+                out.println("location='UserProfile/userprofile.jsp';");
                 out.println("</script>");
             }
 
@@ -112,7 +113,6 @@ public class deleteBooking extends HttpServlet {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(reservation.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
 
     /**
