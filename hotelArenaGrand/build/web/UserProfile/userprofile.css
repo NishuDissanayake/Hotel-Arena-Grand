@@ -5,7 +5,7 @@ body
 
 .header-image
 {
-    background-image: url('./../Images/Home Header.jpg');
+    background-image: url('./../Images/Ex-Img 3.jpg');
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@ body
 
 .profile-pic
 {
-    background-color: orange;
+    background-image: url('./../Images/User.jpg');
     height: 250px;
     width: 250px;
     margin-left: auto;

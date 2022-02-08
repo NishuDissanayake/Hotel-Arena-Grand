@@ -5,7 +5,7 @@ body
 
 .header-image
 {
-    background-image: url('./Images/Home Header.jpg');
+    background-image: url('./Images/Ex-Img 1.jpg');
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,5 +93,7 @@ h2
 
 .btn:hover
 {
-    background-color: #FFF !important;
+    background-color: #f5d142 !important;
+    border-color: #f5d142;
+    color: black;
 }

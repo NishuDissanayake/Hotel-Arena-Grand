@@ -105,13 +105,14 @@ public class reservation extends HttpServlet {
                 if (rslt) {
                     boolean rsltRoomUpdate = re.RoomUpdate(roomType, remainingRooms);
                     if (rsltRoomUpdate) {
+                        
+                        /*
+                        String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+fname+"&email="+emailAdd+"";
+                        response.sendRedirect(redirectURL);*/
                         out.println("<script type=\"text/javascript\">");
                         out.println("alert('Rooms Available!');");
                         out.println("location='Reservations/ReservationsPay.jsp';");
                         out.println("</script>");
-                        
-                        String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+fname+"&email="+emailAdd+"";
-                        response.sendRedirect(redirectURL);
 
                     } else {
                         out.println("<script type=\"text/javascript\">");

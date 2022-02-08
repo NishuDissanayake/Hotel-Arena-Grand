@@ -78,9 +78,17 @@ public class register extends HttpServlet {
                 userHandling uh = new userHandling();
                 boolean rslt = uh.registerUser(name, email, phone, pwd);
                 if (rslt == true) {
+                    out.println("<script type=\"text/javascript\">");
+                        out.println("alert('Signup Complete!');");
+                        out.println("location='Login/login.jsp';");
+                        out.println("</script>");
                     RequestDispatcher rs = request.getRequestDispatcher("UserProfile/userprofile.jsp");
                     rs.include(request, response);
                 } else {
+                    out.println("<script type=\"text/javascript\">");
+                        out.println("alert('Something went wrong!');");
+                        out.println("location='Signup/signup.jsp';");
+                        out.println("</script>");
                     RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
                     rs.include(request, response);
                 }

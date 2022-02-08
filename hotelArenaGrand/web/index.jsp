@@ -72,22 +72,22 @@ Indulge in a wide selection of Sri Lankan delicacies with the best hand-picked f
                 </div>
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+                        <img src="./Images/In-Img 2.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Semi Deluxe Room</span><br /><br />
-                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities. This lavish room has being designed with an element of elegance & has a panoramic view of the Ocean. Contemporary spacious design with wooden flooring, the Semi deluxe Room is the Hotel’s signature accommodation category that ensures total comfort.</p>
+                                Designed to inspire rest and relaxation, our sleek, a modern hotel room features a king of facilities. This lavish room has being designed with an element of elegance.</p>
                             <div class="button-book"><a href="./Reservations/reservations.jsp" class="btn btn-primary">Book Now</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="./Images/Home Header.jpg" class="card-img-top" alt="Card Image">
+                        <img src="./Images/Reservations-Home-Header.jpg" class="card-img-top" alt="Card Image">
                         <div class="card-body">
                             <p class="card-text">
                                 <span class="card-header-text">Deluxe Room</span><br /><br />
-                                Rooms are equipped with all modern amenities and offer you a spectacular view of the Ocean both day & night. Our Deluxe Rooms are designed to inspire rest and relaxation with comfort & elegance in mind. Situated in the upper floors of the property, larger balconies featuring amazing sea views that blend seamlessly in to the azure of the Indian Ocean all equipped with furnishings made from Maldives’ indigenous materials.
+                                Rooms are equipped with all modern amenities and offer you a spectacular view of the Ocean both day & night. Our Deluxe Rooms are designed to inspire rest and relaxation.
                             </p>
                             <div class="button-book"><a href="./Reservations/reservations.jsp" class="btn btn-primary">Book Now</a></div>
                         </div>

@@ -26,7 +26,7 @@ public class reservations {
         return searchList;
     }
 
-    public boolean reservations(String roomType, int num_of_rooms, String fname, String checkIn, String checkOut, String phoneNum, String emailAdd, String arrTime, int adults, int kids, int totalPeople, double paymentAmount) throws ClassNotFoundException, SQLException {
+    public synchronized boolean reservations(String roomType, int num_of_rooms, String fname, String checkIn, String checkOut, String phoneNum, String emailAdd, String arrTime, int adults, int kids, int totalPeople, double paymentAmount) throws ClassNotFoundException, SQLException {
 
         PreparedStatement pr = dbcon.createConnection().prepareStatement("INSERT INTO reservations(roomType, numberOfRooms, fullName, phoneNumber, email, checkIn, chackOut, arrivalTime, adults, kids, totalPeople, paymentAmount ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
         pr.setString(1, roomType);
