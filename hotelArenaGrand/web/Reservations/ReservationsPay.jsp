@@ -58,8 +58,11 @@
         <div class="reserve-header-image">
             <h1 class="header-text">Reservations</h1>
         </div>
-
-        <h1>Proceed to pay</h1>
+        <p class="pro">Proceed to pay :</p>
+        
+        <div class="form-container" style="margin-top: 5px; margin-bottom: 35px">
+            
+            
         <!--Paypal Integration-->
         <div id="smart-button-container">
             <div style="text-align: center;">
@@ -106,10 +109,10 @@
                 }).render('#paypal-button-container');
             }
             initPayPalButton();
-        </script>
-    </form>
-</div>
-</div>   
+        </script> 
+        
+        </div>
+        
 
 <div class="container-fluid footer">
             <div class="row">
