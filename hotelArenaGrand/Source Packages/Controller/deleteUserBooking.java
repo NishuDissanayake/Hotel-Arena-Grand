@@ -74,6 +74,8 @@ public class deleteUserBooking extends HttpServlet {
         String bookingID = request.getParameter("bookingID");
         String num_of_rooms = request.getParameter("roomCount");
         String roomType = request.getParameter("roomType");
+        String name = request.getParameter("name");
+        String emailAdd = request.getParameter("emailAdd");
 
         int I_bookingID = Integer.parseInt(bookingID);
        int I_num_of_rooms = Integer.parseInt(num_of_rooms);
@@ -94,6 +96,10 @@ public class deleteUserBooking extends HttpServlet {
                 out.println("alert('Reservation Deleted Successfully!');");
                 out.println("location='UserProfile/userprofile.jsp';");
                 out.println("</script>");
+                
+                String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+name+"&email="+emailAdd+"";
+                response.sendRedirect(redirectURL);
+                
             } else {
                 out.println("<script type=\"text/javascript\">");
                 out.println("alert('Oops! Something went wrong!');");

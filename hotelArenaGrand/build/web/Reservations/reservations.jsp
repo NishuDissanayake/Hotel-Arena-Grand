@@ -4,6 +4,12 @@
     Author     : HP
 --%>
 
+<%
+    String email = (String) session.getAttribute("Email");
+
+    if (email != null) {%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -184,3 +190,7 @@
         
     </body>
 </html>
+
+<% } else {
+        response.sendRedirect("../Login/login.jsp");
+    }%>

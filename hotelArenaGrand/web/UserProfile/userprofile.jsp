@@ -155,11 +155,14 @@
                                 String reservationID = resultSet.getString("reservationID");
                                 String roomType = resultSet.getString("roomType");
                                 String roomCount = resultSet.getString("numberOfRooms");
+                                String name = resultSet.getString("fullName");
                             %> 
                             <td><form action="../deleteUserBooking" method="POST">
                                     <input type="hidden" name="bookingID" value="<%=reservationID%>">
                                     <input type="hidden" name="roomType" value="<%=roomType%>">
                                     <input type="hidden" name="roomCount" value="<%=roomCount%>">
+                                    <input type="hidden" name="name" value="<%=name%>">
+                                    <input type="hidden" name="emailAdd" value="<%=email%>">
                                     <input type="submit" value="Delete" class="btn btn-dark delete-booking"/>
                                 </form></td>
                         </tr>

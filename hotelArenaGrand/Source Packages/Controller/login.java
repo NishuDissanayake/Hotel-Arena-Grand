@@ -77,7 +77,7 @@ public class login extends HttpServlet {
             boolean rslt = uh.loginUser(email, pwd);
             if (rslt == true) {
                 HttpSession session = request.getSession();
-                session.setMaxInactiveInterval(900);
+                session.setMaxInactiveInterval(30);
                 session.setAttribute("Email", email);
                 response.sendRedirect("UserProfile/userprofile.jsp");
             } else {
